@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.navBar img {
+    cursor: pointer;
+}
+
+.menu1, .menu2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 20px;
+}
+
+.banner__Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__Container i {
+    color: #FFFFFF;
+}
+
+.banner__item {
+    display: flex;
+    align-items: center;
+}
+
+.banner__item i {
+    cursor: pointer;
+}
+
+.esquerda, .direita {
+    position: absolute;
+    z-index: 2;
+    margin: 0px 20px;
+    font-size: 3.5vh;
+}
+
+.direita {
+    right: 0;
+}
+
+.imgSlider {
+    width: 100%;
+}
+
+.banner__info {
+    padding: 15px 20px;
+}
+
+.marca {
+    color: rgb(233 143 84);
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.marcaTitle {
+    margin: 10px 0px;
+}
+
+.descricaoProduto {
+    color: hsl(230deg 3.49% 66.27%);
+}
+
+.preco__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.preco__valorReal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.precoTd {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.precoDesconto {
+    background-color: hsl(27.86deg 87.5% 93.73%);
+    color: hsl(22.97deg 81.4% 57.84%);
+    padding: 5px;
+    font-weight: 700;
+}
+
+.descontoTd {
+    color: hsl(240deg 7.81% 74.9%);
+    text-decoration: line-through;
+}
+
+.submit__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.qtdProduto {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(230deg 60% 98.04%);
+    padding: 10px;
+}
+
+.qtdProduto button {
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    color: hsl(22.5deg 98.11% 58.43%);
+    font-size: 1.2rem;
+}
+
+.addCart button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: hsl(22.5deg 98.11% 58.43%);
+    box-shadow: 0px 5px 10px 0px hsl(22.5deg 98.11% 58.43%);
+    color: white;
+    padding: 10px 35px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.menuMobile {
+    position: fixed;
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100vw;
+    left: -100vw;
+    transition-duration: 200ms;
+    z-index: 10;
+}
+
+.abrirMenu {
+    position: fixed;
+    left: 0;
+}
+
+.menuMobile {
+    padding: 20px;
+}
+
+.srcFecha {
+    margin-bottom: 30px;
+}
+
+.item__ancor {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.item__ancor a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #b9bbbe;
+}
+
+.menuDesk {
+    display: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.item__ancorDesk {
+    list-style-type: none;
+}
+
+
+.item__ancorDesk a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #b9bbbe;
+}
+
+.thumb__container {
+    display: none;
+}
+
+/*-------ligthBox---------*/
+
+.high__container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000bd;
+    z-index: 3;
+}
+
+.light__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.principalImg {
+    width: 30vw;
+    border-radius: 1rem;
+}
+
+.icone {
+    margin: 0px 15px 15px 30vw;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#ativaBox {
+    cursor: pointer;
+} 
+
+/*-----------------tablet-------------------*/
+
+@media  screen and (min-width:768px) {
+    .menuMobile {
+        display: none;
+    }
+    .svgMobile {
+        display: none;
+    }
+
+    .menuDesk {
+        display: flex;
+    }
+
+    .menu1 {
+        gap: 40px;
+    }
+
+}
+
+/*-----------------mini-Desk------------------*/
+
+
+@media  screen and (min-width:900px) {
+    .content__container {
+        padding: 15px 80px;
+    }
+    .navBar {
+        border-bottom: 1px solid #b9bbbe;
+        padding: 15px 0px;
+    }
+    .banner__Container {
+        flex-direction: row;
+        gap: 50px;
+        margin: 30px 60px;
+    }
+    
+    .esquerda, .direita {
+        display: none;
+    }
+
+    .banner__imgs {
+        max-width: 400px;
+    }
+
+    .container__deskFlex {
+        max-width: 478px;
+    }
+
+    .thumb__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner__info {
+        padding: 50px 50px;
+    }
+
+    .banner__item {
+        width: 400px;
+    }
+
+    .banner__item img {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .thumb__container img {
+        width: 60px;
+        border-radius: 10px;
+    }
+
+    .marcaTitle {
+        font-size: 2rem;
+    }
+
+    .preco__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .descontoTd {
+        margin-top: 5px;
+    }
+
+    .submit__container {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+     
+    .qtdProduto {
+        width: 120px;
+        border-radius: 8px;
+    }
+}

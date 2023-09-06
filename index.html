@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="content__container">
+
+    <section class="menuMobile">
+      <img class="srcFecha" id="fechaIcon" src="./images/icon-close.svg" alt="">
+      <ul class="container__ancor">
+        <li class="item__ancor"><a href="#">Collections</li>
+        <li class="item__ancor"><a href="#">Men</a></li>
+        <li class="item__ancor"><a href="#">Women</a></li>
+        <li class="item__ancor"><a href="#">About</a></li>
+        <li class="item__ancor"><a href="#">Contact</a></li>
+      </ul>
+    </section>
+
+    <nav class="navBar">
+      <div class="menu1">
+        <img id="abrirIcon" src="/images/icon-menu.svg" alt="" class="svgMobile">
+        <h1 class="titleNav">sneakers</h1>
+        <ul class="menuDesk">
+          <li class="item__ancorDesk"><a href="#">Collections</a></li>
+          <li class="item__ancorDesk"><a href="#">Men</a></li>
+          <li class="item__ancorDesk"><a href="#">Women</a></li>
+          <li class="item__ancorDesk"><a href="#">About</a></li>
+          <li class="item__ancorDesk"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="menu2">
+        <img src="/images/icon-cart.svg" alt="compras">
+        <img class="avatar" src="/images/image-avatar.png" alt="">
+      </div>
+    </nav>
+    
+    <section class="banner__Container">
+      <div class="banner__imgs">
+        <div class="banner__item">
+          <i class=" esquerda fa-solid fa-circle-chevron-left"></i>
+          <img id="ativaBox" class="imgSlider" src="./images/image-product-1.jpg" alt="">
+          <i class=" direita fa-solid fa-circle-chevron-right"></i>
+        </div>
+        <div class="thumb__container">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+     <div class="container__deskFlex">
+      <div class="banner__info">
+        <span class="marca">sneaker company</span>
+        <h1 class="marcaTitle">Fall Limited Edition Sneakers</h1>
+        <span class="descricaoProduto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident iure asperiores tempora maxime? Quidem placeat numquam velit suscipit quaerat provident voluptatum tempora vitae natus. Dolore quisquam minus eum quidem molestiae.</span>
+        <div class="preco__container">
+          <div class="preco__valorReal">
+            <span class="precoTd">$125.00</span>
+            <span class="precoDesconto">50%</span>
+          </div>
+          <span class="descontoTd">$250.00</span>
+        </div>
+      </div>
+      <div class="submit__container">
+        <div class="qtdProduto">
+          <button>-</button>
+          <span class="qtd">0</span>
+          <button>+</button>
+        </div>
+        <div class="addCart">
+          <button><i class="carrinho fa-solid fa-cart-shopping"></i>Add to Cart</button>
+        </div>
+      </div>
+     </div>
+    </section>
+  </main>
+  <script src="./src/js/main.js" type="module"></script>
+</body>
+</html>
