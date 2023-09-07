@@ -7,6 +7,7 @@
 
 button {
     cursor: pointer;
+    
 }
 
 .navBar{
@@ -122,6 +123,7 @@ button {
 .qtdProduto {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: hsl(230deg 60% 98.04%);
     padding: 10px;
 }
@@ -238,6 +240,64 @@ button {
     cursor: pointer;
 } 
 
+.imgSecContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 30vw;
+}
+
+.imgSecContainer img {
+    width: 5vw;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.imgSlider__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+}
+
+.p-ab {
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.pr-l {
+    left: 1vw;
+}
+
+.pr-r {
+    right: 1vw;
+}
+
+/*-----------------LB-mobile-----------------*/
+
+@media  screen and (max-width:600px) { 
+
+    .icone {
+        margin: 0px 30px 15px 80vw;
+    }
+
+    .principalImg {
+        width: 80vw;
+    }
+
+    .imgSecContainer {
+        width: 80vw;
+    }
+
+    .imgSecContainer img {
+        width: 10vw;
+    }
+}
+
+
 /*-----------------tablet-------------------*/
 
 @media  screen and (min-width:768px) {
@@ -261,6 +321,12 @@ button {
 /*-----------------mini-Desk------------------*/
 
 
+@media screen and (max-width:900px) {
+    .high__container  {
+        height: 200vh;
+    }
+}
+
 @media  screen and (min-width:900px) {
     .content__container {
         padding: 15px 80px;
@@ -271,7 +337,7 @@ button {
     }
     .banner__Container {
         flex-direction: row;
-        gap: 50px;
+        justify-content: center;
         margin: 30px 60px;
     }
     
@@ -293,8 +359,9 @@ button {
         justify-content: space-between;
     }
 
-    .banner__info {
-        padding: 50px 50px;
+    .thumb__container img {
+        width: 10vw;
+        cursor: pointer;
     }
 
     .banner__item {
@@ -307,7 +374,7 @@ button {
     }
 
     .thumb__container img {
-        width: 60px;
+        width: 70px;
         border-radius: 10px;
     }
 
@@ -327,10 +394,90 @@ button {
     .submit__container {
         flex-direction: row;
         justify-content: flex-start;
+        align-items: center;
     }
      
     .qtdProduto {
         width: 120px;
         border-radius: 8px;
+    }
+}
+
+/*------------------Laptop-----------------*/
+
+@media  screen and (min-width:1400px) {
+
+    .navBar {
+        margin: 0 110px;
+    }
+
+    .titleNav {
+        font-size: 2rem;
+    }
+
+    .menu2 {
+        gap: 20px;
+    }
+
+    .avatar {
+        width: 30px;
+    }
+
+    .banner__Container{
+        margin: 80px 0px;
+    }
+
+    .banner__info {
+        padding: 50px;
+    }
+
+    .submit__container {
+        justify-content: space-between;
+        padding: 0px 80px;
+    }
+    
+    .addCart button {
+        width: 110%;
+        justify-content: space-evenly;
+    }
+}
+
+/*-----------------DESKTOP------------------*/
+
+@media  screen and (min-width:1900px) {
+
+    .navBar {
+        margin: 0px 300px;
+    }
+
+    .avatar {
+        width: 40px;
+    }
+
+    .banner__Container {
+        margin: 100px 0px;
+    }
+
+    .banner__info {
+        margin-left: 70px;
+    }
+
+    .submit__container {
+        margin-left: 70px;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .thumb__container img {
+        width: 80px;
+    }
+
+    .pr-l {
+        left: .6vw;
+    }
+    
+    .pr-r {
+        right: .6vw;
     }
 }
